@@ -4,6 +4,10 @@ var compression = require('compression');
 var express = require('express');
 var app = express();
 
+// Since App Engine terminates https connections at the load
+// balancer and forwards the request, add trust proxy to express.
+app.set('trust_proxy', 1);
+
 app.use(compression());
 app.use(express.static(__dirname + '/dist'));
 
