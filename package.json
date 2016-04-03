@@ -2,6 +2,7 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "Resume website for Ryan McDowell.",
+  "repository": "https://github.com/ryanmcdowell/resume.git",
   "dependencies": {
     "compression": "^1.6.1",
     "express": "^4.13.4",

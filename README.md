@@ -4,6 +4,9 @@ Resume website for Ryan McDowell.
 
 ## Installation
 
+Note that the jpreloader was replaced with a custom module from the berg template. In order
+to get the module, copy from the berg template into the bower components.
+
 <pre>
 git clone https://github.com/ryanmcdowell/resume.git
 npm install
