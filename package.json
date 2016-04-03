@@ -1,7 +1,10 @@
 {
   "name": "resume",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "compression": "^1.6.1",
+    "express": "^4.13.4"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
