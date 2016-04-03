@@ -1,0 +1,608 @@
+<!-- HERO START -->
+<header id="home" class="hero">
+    <div class="hero-body">
+        <div class="hero-text text-center">
+            <h1>
+                I'm Ryan McDowell <span class="blinker"></span>
+            </h1>
+
+            <h1 class="small">Software Engineer</h1>
+
+            <p>Prisoner of curiosity, adrenaline addict.</p>
+
+            <div>
+                <a href="#profile" class="btn btn-lg btn-custom" scroll-to="profile" duration="1800">
+                    Know Me Better
+                </a>
+            </div>
+            <!-- //.page-scroll -->
+        </div>
+        <!-- //.hero-text -->
+    </div>
+    <!-- //.hero-body -->
+</header>
+<!-- //HERO END -->
+
+
+<!-- NAVIGATION START -->
+<nav id="navigation" sticky class="navbar navbar-fixed-top center-menu" role="navigation">
+    <div class="container navbar-container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" ng-click="showDropdown = !showDropdown">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand visible-xs visible-sm" href="#page-top" scroll-to="home" duration="1800">MCDOWELL</a>
+        </div>
+        <!-- //.navbar-header -->
+
+        <div class="navbar-collapse collapse berg-collapse" collapse="!showDropdown">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#home" scroll-to="home" duration="1800" ng-click="showDropdown = false">Home</a>
+                </li>
+
+                <li>
+                    <a href="#profile" scroll-to="profile" duration="1800" ng-click="showDropdown = false">Profile</a>
+                </li>
+
+                <li>
+                    <a href="#resume" scroll-to="resume" duration="1800" ng-click="showDropdown = false">Resume</a>
+                </li>
+
+                <li>
+                    <a href="#skills" scroll-to="skills" duration="1800" ng-click="showDropdown = false">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#contact" scroll-to="contact" duration="1800" ng-click="showDropdown = false">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- //.navbar-collapse -->
+    </div>
+    <!-- //.navbar-container -->
+</nav>
+<!-- //NAVIGATION END -->
+
+
+<!-- PROFILE SECTION START -->
+<section id="profile" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-7 match-height">
+
+                    <!-- PROFILE TEXT START -->
+                    <div class="profile-text padding-right-yes">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="section-title">Hello, My Name is Ryan.</h2>
+
+                                <p>
+                                    Ryan McDowell, born and grew up in Chicago, Illinois. Highly motivated software engineer with a passion for cutting edge technology.
+                                </p>
+
+                                <span class="divider"></span>
+
+                                <p class="text-grey" in-view="animateProfile = true" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile}">
+                                    I currently work at Neuberger Berman, where I spend most of my time crafting and working on awesome projects.
+                                </p>
+
+                                <p class="text-grey" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile}">
+                                    In my free time, I work on my custom built Linux media center attempting to create binge watching utopia. But
+                                    don't let that fool you, I have definitely have a thrist for adventure. In training for my next life as a spy,
+                                    I've rappelled off the Wit Hotel and flew a military combat plane in a dogfight (no flying experience necessary).
+                                </p>
+                            </div>
+                            <!-- //.col-md-12 -->
+                        </div>
+                        <!-- //.row -->
+                    </div>
+                    <!-- //PROFILE TEXT END -->
+
+                    <!-- CONTACT DETAILS START -->
+                    <div class="contact-details padding-right-yes">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5">
+                                <h4>Contact Details</h4>
+
+                                <ul class="list-unstyled text-grey">
+                                    <li>Ryan McDowell</li>
+                                    <li>(630) 418-2121</li>
+                                    <li>hello@ryanmcdowell.io</li>
+                                    <li>www.ryanmcdowell.io</li>
+                                </ul>
+                            </div>
+                            <!-- //.col-md-5 -->
+
+                            <div class="col-sm-6 col-md-7">
+                                <a href="resume/RyanMcDowell-Resume.pdf" class="btn btn-lg btn-custom" download>
+                                    <i class="icon-File-Download"></i> Download Resume
+                                </a>
+                            </div>
+                            <!-- //.col-md-6 -->
+                        </div>
+                        <!-- //.row -->
+                    </div>
+                    <!-- //CONTACT DETAILS END -->
+
+                </div>
+                <!-- //.col-md-7 -->
+
+                <!-- PROFILE PICTURE START -->
+                <div class="col-md-5 hidden-xs hidden-sm match-height pp-wrapper">
+                    <div class="profile-picture style-two">
+                        <img src="images/me-1.jpg" alt="profile picture" class="img-responsive"/>
+                    </div>
+                </div>
+                <!-- //PROFILE PICTURE END -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //PROFILE SECTION END -->
+
+
+<!-- RESUME SECTION START -->
+<section id="resume" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">My Resume</h2>
+
+                    <p class="section-subtitle">
+                        If you call failures experiments, you can put them in your resume and claim them as achievements.
+                    </p>
+
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+
+            <!-- WORK EXPERIENCE START -->
+            <div class="row work-experience">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3>
+                        Work Experience
+                        <br>
+                        2012 - Now
+                    </h3>
+
+                    <div class="panel-group resume" id="work">
+                        <div class="resume-item" ng-init="showWork1 = true">
+                            <div class="resume-year">
+                                <span class="resume-year">2015 - Now</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a class="clickable" ng-click="showWork1 = !showWork1" ng-class="{'collapsed': !showWork1}"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Neuberger Berman - Senior Developer, AVP </h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="work1" class="panel-collapse" collapse="!showWork1">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                            Responsibilities:
+                                            <br>
+                                            Senior Developer for the Client Service team. Worked with business users to
+                                            define reporting requirements and . Also,
+                                        </p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item" in-view="animateWork2 = true" ng-class="{'animated': animateWork2, 'bounceInUp': animateWork2}">
+                            <div class="resume-year">
+                                <span class="resume-year">2013 - 2015</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a class="clickable" ng-click="showWork2 = !showWork2" ng-class="{'collapsed': !showWork2}"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Neuberger Berman - Solutions Architect</h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="work2" class="panel-collapse" collapse="!showWork2">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                            Responsibilities:
+                                            <br>
+                                            Architect for the Data Platform team responsible for amalgamating the golden source with external
+                                            parties.
+                                            <br>
+                                            <br>
+                                            - Developed a lightweight ETL tool, MeatBall (don't ask), based on AngularJS, MongoDb, and Mule ESB.
+                                            MeatBall largely replaced Informatica as the go-to tool for file processing and is now used across 9
+                                            different technology groups processing approximatey 28,000 ETLs a month.
+                                            <br>
+                                            <br>
+                                            - Designed and implemented the first micro-service architecture at the firm for RESTful web services.
+                                            The implementation was presented at the companys's tech talks and was used as the firm standard for
+                                            creating micro-services.
+                                            <br>
+                                            <br>
+                                            - Oversaw the design of over 1,500 Tidal Scheduler jobs. Was able to reduce the development time needed
+                                            for additional batch processes by creating reusable stream-lined flows for incoming data-sets.
+                                            <br>
+                                            <br>
+                                            - Led design and implementation on a composite benchmark engine. The engine was responsible for recomputing
+                                            benchmark analytics for components within the constituents on a daily basis.
+                                        </p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item" in-view="animateWork3 = true" ng-class="{'animated': animateWork3, 'bounceInUp': animateWork3}">
+                            <div class="resume-year">
+                                <span class="resume-year">2012 - 2013</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a class="clickable" ng-click="showWork3 = !showWork3" ng-class="{'collapsed': !showWork3}"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Neuberger Berman - Developer</h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="work3" class="panel-collapse" collapse="!showWork3">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                            Responsibilities:
+                                            <br>
+                                            Developer for the Trade Management team responsible for improving quality, delivery, and outcome of
+                                            trade processing.
+                                            <br>
+                                            <br>
+                                            - Built a FIX-based reporting application to report TRACE trades to FINRA via Appia. The application
+                                            was built on top of Mule ESB and used REST webservices and WMQ to integrate with other applications.
+                                        </p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                    </div>
+                    <!-- //.panel-group -->
+                </div>
+                <!-- //.col-md-10 -->
+            </div>
+            <!-- //WORK EXPERIENCE END -->
+
+            <!-- EDUCATION START -->
+            <div class="row education">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3>
+                        My Education
+                        <br>
+                        2008 - Now
+                    </h3>
+
+                    <div class="panel-group resume" id="education">
+                        <div class="resume-item">
+                            <div class="resume-year">
+                                <span class="resume-year">In Progress</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a class="clickable" ng-click="showEducation1 = !showEducation1" ng-class="{'collapsed': !showEducation1}"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Masters in Computer Science - DePaul University</h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="education1" class="panel-collapse" collapse="!showEducation1">
+                                    <div class="panel-body text-grey">
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item" in-view="animateEducation2 = true" ng-class="{'animated': animateEducation2, 'bounceInUp': animateEducation2}">
+                            <div class="resume-year">
+                                <span class="resume-year">2008 - 2011</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a class="clickable" ng-click="showEducation2 = !showEducation2" ng-class="{'collapsed': !showEducation2}"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Bachelors in Computer Science - DePaul University</h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="education2" class="panel-collapse" collapse="!showEducation2">
+                                    <div class="panel-body text-grey">
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                    </div>
+                    <!-- //.panel-group -->
+                </div>
+                <!-- //.col-md-10 -->
+            </div>
+            <!-- //EDUCATION END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //RESUME SECTION END -->
+
+
+<!-- SKILLS SECTION START -->
+<section id="skills" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">Skills & Expertise</h2>
+
+                    <p class="section-subtitle">A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.</p>
+
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+
+            <!-- CIRCLE CHART START -->
+            <div class="circle-chart">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" in-view="circleHtmlProgress = 45" ng-style="{height: circleHtmlProgress + 'px'}"></span>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="percent">45%</span>
+
+                            <h4>HTML5 + CSS3</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" in-view="circleAngularProgress = 55" ng-style="{height: circleAngularProgress + 'px'}"></span>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="percent">55%</span>
+
+                            <h4>Angular JS</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" in-view="circleMongoProgress = 40" ng-style="{height: circleMongoProgress + 'px'}"></span>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="percent">40%</span>
+
+                            <h4>MongoDb</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" in-view="circleJavaProgress = 65" ng-style="{height: circleJavaProgress + 'px'}"></span>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="percent">65%</span>
+
+                            <h4>Java</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" in-view="circleMuleProgress = 60" ng-style="{height: circleMuleProgress + 'px'}"></span>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="percent">60%</span>
+
+                            <h4>Mule ESB</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item last">
+                            <div class="circle">
+                                <span class="item-progress" in-view="circleMicroProgress = 55" ng-style="{height: circleMicroProgress + 'px'}"></span>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="percent">55%</span>
+
+                            <h4>Microservices</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //CIRCLE CHART END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //SKILLS SECTION END -->
+
+
+<!-- CONTACT SECTION START -->
+<section id="contact" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Contact Me</h2>
+
+                    <p class="section-subtitle">
+                        Have an opportunity you'd like to discuss?
+                    </p>
+
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- CONTACT DETAILS START -->
+                    <div class="contact-details text-center" in-view="animateContact = true" ng-class="{'animated': animateContact, 'flipInX': animateContact}">
+                        <div class="speech-bubble">
+                            <i class="icon-Speach-Bubble11"></i>
+
+                            <h4 class="text-grey">
+                                Say<br>Hello
+                            </h4>
+                        </div>
+                        <!-- //.speech-bubble -->
+
+                        <h2>Ryan <strong>McDowell</strong></h2>
+
+                        <h4 class="text-grey"><a href="mailto:hello@ryanmcdowell.io">hello@ryanmcdowell.io</a></h4>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //CONTACT DETAILS END -->
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //CONTACT SECTION END -->
+
+
+<!-- FOOTER START -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-scroll">
+                    <a href="#page-top" scroll-to="page-top" duration="1800"><i class="icon-Arrow-Up"></i></a>
+                </div>
+                <!-- //.page-scroll -->
+
+            </div>
+            <!-- //.col-md-12 -->
+        </div>
+        <!-- //.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright text-center">
+                    <p class="text-grey">&copy; 2015 Ryan McDowell. All rights reserved.</p>
+                </div>
+                <!-- //.copyright -->
+            </div>
+            <!-- //.col-md-12 -->
+        </div>
+        <!-- //.row -->
+    </div>
+    <!-- //.container -->
+</footer>
+<!-- //FOOTER END -->
