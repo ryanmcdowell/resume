@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "Resume site for Ryan McDowell.",
+  "description": "Resume website for Ryan McDowell.",
   "dependencies": {
     "compression": "^1.6.1",
     "express": "^4.13.4",
