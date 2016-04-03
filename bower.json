@@ -11,7 +11,6 @@
     "angular-sanitize": "1.2.6",
     "angular-route": "1.2.6",
     "font-awesome": "4.5.0",
-    "jpreloader": "*",
     "animate.css": "animate-css#^3.5.1",
     "ngSmoothScroll": "^2.0.0",
     "ngSticky": "^1.8.7",
