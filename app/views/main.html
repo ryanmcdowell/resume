@@ -88,15 +88,18 @@
 
                                 <span class="divider"></span>
 
-                                <p class="text-grey invisible" in-view="animateProfile = true" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
-                                    I currently work at Neuberger Berman, where I spend most of my time crafting and working on awesome projects.
-                                </p>
+                                <div in-view="animateProfile = true" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
+                                    <p class="text-grey">
+                                        I currently work at Neuberger Berman, where I spend most of my time crafting and working on awesome projects.
+                                    </p>
 
-                                <p class="text-grey" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
-                                    In my free time, I work on my custom built Linux media center attempting to create binge watching utopia. But
-                                    don't let that fool you; I definitely have a thirst for adventure. In training for my next life as a spy,
-                                    I've rappelled off the Wit Hotel and have flown a military combat plane in a dogfight (no flying experience necessary).
-                                </p>
+                                    <p class="text-grey">
+                                        In my free time, I work on my custom built Linux media center attempting to create binge watching utopia. But
+                                        don't let that fool you; I definitely have a thirst for adventure. In training for my next life as a spy,
+                                        I've rappelled off the Wit Hotel and have flown a military combat plane in a dogfight (no flying experience necessary).
+                                    </p>
+                                </div>
+
                             </div>
                             <!-- //.col-md-12 -->
                         </div>
@@ -174,159 +177,41 @@
                     <h3>Work Experience</h3>
 
                     <div class="panel-group resume" id="work">
-                        <div class="resume-item" ng-init="showWork1 = true">
+
+                        <div class="resume-item"
+                             ng-repeat="job in resume.workExperience"
+                             ng-init="showDetail = $index > 0 ? false : true"
+                             in-view="animate = $index > 0 ? true : false"
+                             ng-class="{'animated': animate, 'bounceInUp': animate, 'invisible': !animate && $index > 0}">
+
                             <div class="resume-year">
-                                <span class="resume-year">2015 - Now</span>
+                                <span class="resume-year">{{job.startDate}} - {{job.endDate}}</span>
                             </div>
                             <!-- //.resume-year -->
 
                             <div class="resume-btn">
-                                <a class="clickable" ng-click="showWork1 = !showWork1" ng-class="{'collapsed': !showWork1}"></a>
+                                <a class="clickable" ng-click="showDetail = !showDetail" ng-class="{'collapsed': !showDetail}"></a>
                             </div>
                             <!-- //.resume-btn -->
 
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">Neuberger Berman - Solutions Architect, AVP</h4>
+                                        <h4 class="resume-title">{{job.company}} - {{job.title}}</h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
 
-                                <div id="work1" class="panel-collapse" collapse="!showWork1">
+                                <div class="panel-collapse" collapse="!showDetail">
                                     <div class="panel-body text-grey">
                                         <p>
                                             Responsibilities:
                                             <br>
-                                            Solutions architect for the Client Service team responsible for working with business users
-                                            to define reporting requirements and oversee the design and implementation.
-                                            <br>
-                                            <br>
-                                            - Selected by the CTO to be a member of the Developer Council that aimed to encourage collaboration
-                                            and idea generation across technology groups. Set the firm-wide standards for database security and
-                                            worked to train other technology groups on internally built shared services.
-                                            <br>
-                                            <br>
-                                            - Presented at several company tech talks including ones on Git, MongoDb, and Microservices
-                                            and was a technology evangelist for cutting-edge architecture.
-                                            <br>
-                                            <br>
-                                            - Maintained weekly status meetings with the Product Owner and ensured the team stayed on
-                                            track to meet deliverables on time.
-                                            <br>
-                                            <br>
-                                            - Engineered a C#, ASP.NET data management system which allowed for user administration of
-                                            client reporting data. The system enabled users the flexibility to create highly customized
-                                            client reports and audit manual data entry.
-                                            <br>
-                                            <br>
-                                            - Coached developers on Mule ESB development, testing, and best practices.
+                                            {{job.responsibilities}}
                                         </p>
-                                    </div>
-                                    <!-- //.panel-body -->
-                                </div>
-                                <!-- //.panel-collapse -->
-                            </div>
-                            <!-- //.panel -->
-                        </div>
-                        <!-- //.resume-item -->
-
-                        <div class="resume-item" in-view="animateWork2 = true" ng-class="{'animated': animateWork2, 'bounceInUp': animateWork2, 'invisible': !animateWork2}">
-                            <div class="resume-year">
-                                <span class="resume-year">2013 - 2015</span>
-                            </div>
-                            <!-- //.resume-year -->
-
-                            <div class="resume-btn">
-                                <a class="clickable" ng-click="showWork2 = !showWork2" ng-class="{'collapsed': !showWork2}"></a>
-                            </div>
-                            <!-- //.resume-btn -->
-
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <div class="panel-title">
-                                        <h4 class="resume-title">Neuberger Berman - Senior Developer, AVP</h4>
-                                    </div>
-                                    <!-- //.panel-title -->
-                                </div>
-                                <!-- //.panel-heading -->
-
-                                <div id="work2" class="panel-collapse" collapse="!showWork2">
-                                    <div class="panel-body text-grey">
-                                        <p>
-                                            Responsibilities:
-                                            <br>
-                                            Senior Developer for the Data Platform team responsible for amalgamating the golden source with external
-                                            parties.
-                                            <br>
-                                            <br>
-                                            - Developed a lightweight ETL tool, MeatBall (don't ask), based on AngularJS, MongoDb, and Mule ESB.
-                                            MeatBall largely replaced Informatica as the go-to tool for file processing and is now used across 9
-                                            different technology groups processing approximately 28,000 ETLs a month.
-                                            <br>
-                                            <br>
-                                            - Designed and implemented the first micro-service architecture at the firm for RESTful web services.
-                                            The implementation was presented at the company's tech talks and was used as the firm standard for
-                                            creating micro-services.
-                                            <br>
-                                            <br>
-                                            - Oversaw the design of over 1,500 Tidal Scheduler jobs. Was able to reduce the development time needed
-                                            for additional batch processes by creating reusable stream-lined flows for incoming data-sets.
-                                            <br>
-                                            <br>
-                                            - Led design and implementation on a composite benchmark engine used for computing and storing composite benchmark
-                                            analytics from Aladdin. The engine served as an essential piece in providing benchmark data to the front office.
-                                            <br>
-                                            <br>
-                                            - Architected a Bloomberg per security REST service which allowed for the batch and on-demand mastering of
-                                            Bloomberg security and analytics into the data warehouse. The web service allowed IT to restructure their licensing
-                                            agreement with IDC and saved the company approximately $500k per year.
-                                        </p>
-                                    </div>
-                                    <!-- //.panel-body -->
-                                </div>
-                                <!-- //.panel-collapse -->
-                            </div>
-                            <!-- //.panel -->
-                        </div>
-                        <!-- //.resume-item -->
-
-                        <div class="resume-item" in-view="animateWork3 = true" ng-class="{'animated': animateWork3, 'bounceInUp': animateWork3, 'invisible': !animateWork3}">
-                            <div class="resume-year">
-                                <span class="resume-year">2012 - 2013</span>
-                            </div>
-                            <!-- //.resume-year -->
-
-                            <div class="resume-btn">
-                                <a class="clickable" ng-click="showWork3 = !showWork3" ng-class="{'collapsed': !showWork3}"></a>
-                            </div>
-                            <!-- //.resume-btn -->
-
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <div class="panel-title">
-                                        <h4 class="resume-title">Neuberger Berman - Developer</h4>
-                                    </div>
-                                    <!-- //.panel-title -->
-                                </div>
-                                <!-- //.panel-heading -->
-
-                                <div id="work3" class="panel-collapse" collapse="!showWork3">
-                                    <div class="panel-body text-grey">
-                                        <p>
-                                            Responsibilities:
-                                            <br>
-                                            Developer for the Trade Management team responsible for improving quality, delivery, and outcome of
-                                            trade processing.
-                                            <br>
-                                            <br>
-                                            - Built a FIX-based reporting application to report TRACE trades to FINRA via Appia. The application
-                                            was built on top of Mule ESB and used REST web services and WMQ to integrate with other applications.
-                                            <br>
-                                            <br>
-                                            - Co-Developed a major design upgrade for a legal entity management system. The upgrade included a
-                                            conversion to AngularJS and the implementation of Oath2 authentication.
+                                        <p ng-repeat="accomplishment in job.accomplishments" ng-class="{'last': $last}">
+                                            - {{accomplishment}}
                                         </p>
                                     </div>
                                     <!-- //.panel-body -->
@@ -350,59 +235,33 @@
                     <h3>Education</h3>
 
                     <div class="panel-group resume" id="education">
-                        <div class="resume-item">
+
+                        <div class="resume-item"
+                             ng-repeat="degree in resume.education"
+                             ng-init="showDetail = false"
+                             in-view="animate = $index > 0 ? true : false"
+                             ng-class="{'animated': animate, 'bounceInUp': animate, 'invisible': !animate && $index > 0}">
+
                             <div class="resume-year">
-                                <span class="resume-year">In Progress</span>
+                                <span class="resume-year">{{degree.startDate}}<span ng-if="degree.endDate"> - {{degree.endDate}}</span></span>
                             </div>
                             <!-- //.resume-year -->
 
                             <div class="resume-btn">
-                                <a class="clickable" ng-click="showEducation1 = !showEducation1" ng-class="{'collapsed': !showEducation1}"></a>
+                                <a class="clickable" ng-click="showDetail = !showDetail" ng-class="{'collapsed': !showDetail}"></a>
                             </div>
                             <!-- //.resume-btn -->
 
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">Masters in Computer Science - DePaul University</h4>
+                                        <h4 class="resume-title">{{degree.degree}} - {{degree.university}}</h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
 
-                                <div id="education1" class="panel-collapse" collapse="!showEducation1">
-                                    <div class="panel-body text-grey">
-                                        <p></p>
-                                    </div>
-                                    <!-- //.panel-body -->
-                                </div>
-                                <!-- //.panel-collapse -->
-                            </div>
-                            <!-- //.panel -->
-                        </div>
-                        <!-- //.resume-item -->
-
-                        <div class="resume-item" in-view="animateEducation2 = true" ng-class="{'animated': animateEducation2, 'bounceInUp': animateEducation2, 'invisible': !animateEducation2}">
-                            <div class="resume-year">
-                                <span class="resume-year">2008 - 2011</span>
-                            </div>
-                            <!-- //.resume-year -->
-
-                            <div class="resume-btn">
-                                <a class="clickable" ng-click="showEducation2 = !showEducation2" ng-class="{'collapsed': !showEducation2}"></a>
-                            </div>
-                            <!-- //.resume-btn -->
-
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <div class="panel-title">
-                                        <h4 class="resume-title">Bachelors in Computer Science - DePaul University</h4>
-                                    </div>
-                                    <!-- //.panel-title -->
-                                </div>
-                                <!-- //.panel-heading -->
-
-                                <div id="education2" class="panel-collapse" collapse="!showEducation2">
+                                <div id="education1" class="panel-collapse" collapse="!showDetail">
                                     <div class="panel-body text-grey">
                                         <p></p>
                                     </div>

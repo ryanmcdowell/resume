@@ -1,9 +1,10 @@
 'use strict';
 
-angular.module('resumeApp').controller('MainCtrl', function ($scope, $window) {
+angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $http) {
 
     /****************** Scope Variables **********************/
 
+    $scope.resume      = null;
     $scope.currentYear = new Date().getFullYear();
 
 
@@ -37,5 +38,11 @@ angular.module('resumeApp').controller('MainCtrl', function ($scope, $window) {
     // Invoke the changeWindowSize once on load so the
     // page displays in the correct format.
     $scope.changeWindowSize($window.innerWidth);
+
+    // Retrieve resume data and populate the associated scope
+    // variable.
+    $http.get('/data/resume.json').success(function (data) {
+      $scope.resume = data;
+    });
 
   });

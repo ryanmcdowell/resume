@@ -1963,8 +1963,13 @@ button.mfp-arrow:active {
 }
 
 .panel-group.resume .resume-item .panel .panel-collapse .panel-body p {
+  margin-bottom: 20px;
+}
+
+.panel-group.resume .resume-item .panel .panel-collapse .panel-body p.last {
   margin-bottom: 0px;
 }
+
 
 
 /*---------------------------------------------------------------------*/

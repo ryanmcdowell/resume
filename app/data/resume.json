@@ -1,0 +1,61 @@
+{
+	"name": "Ryan McDowell",
+	"occupation": "Software Engineer",
+	"workExperience":
+	[
+		{
+			"company": "Neuberger Berman",
+			"title": "Solutions Architect, AVP",
+			"startDate": "2015",
+			"endDate": "Now",
+			"responsibilities": "Solutions architect for the Client Service team responsible for working with business users to define reporting requirements and oversee the design and implementation.",
+			"accomplishments": [
+				"Selected by the CTO to be a member of the Developer Council that aimed to encourage collaboration and idea generation across technology groups. Set the firm-wide standards for database security and worked to train other technology groups on internally built shared services.",
+				"Presented at several company tech talks including ones on Git, MongoDb, and Microservices and was a technology evangelist for cutting-edge architecture.",
+				"Maintained weekly status meetings with the Product Owner and ensured the team stayed on track to meet deliverables on time.",
+				"Engineered a C#, ASP.NET data management system which allowed for user administration of client reporting data. The system enabled users the flexibility to create highly customized client reports and audit manual data entry.",
+				"Coached developers on Mule ESB development, testing, and best practices."
+			]
+		},
+		{
+			"company": "Neuberger Berman",
+			"title": "Senior Developer, AVP",
+			"startDate": "2013",
+			"endDate": "2015",
+			"responsibilities": "Senior Developer for the Data Platform team responsible for amalgamating the golden source with external parties.",
+			"accomplishments": [
+				"Developed a lightweight ETL tool, MeatBall (don't ask), based on AngularJS, MongoDb, and Mule ESB. MeatBall largely replaced Informatica as the go-to tool for file processing and is now used across 9 different technology groups processing approximately 28,000 ETLs a month.",
+				"Designed and implemented the first micro-service architecture at the firm for RESTful web services. The implementation was presented at the company's tech talks and was used as the firm standard for creating micro-services.",
+				"Oversaw the design of over 1,500 Tidal Scheduler jobs. Was able to reduce the development time needed for additional batch processes by creating reusable stream-lined flows for incoming data-sets.",
+				"Led design and implementation on a composite benchmark engine used for computing and storing composite benchmark analytics from Aladdin. The engine served as an essential piece in providing benchmark data to the front office.",
+				"Architected a Bloomberg per security REST service which allowed for the batch and on-demand mastering of Bloomberg security and analytics into the data warehouse. The web service allowed IT to restructure their licensing agreement with IDC and saved the company approximately $500k per year."
+			]
+		},
+		{
+			"company": "Neuberger Berman",
+			"title": "Developer",
+			"startDate": "2012",
+			"endDate": "2013",
+			"responsibilities": "Developer for the Trade Management team responsible for improving quality, delivery, and outcome of trade processing.",
+			"accomplishments": [
+				"Built a FIX-based reporting application to report TRACE trades to FINRA via Appia. The application was built on top of Mule ESB and used REST web services and WMQ to integrate with other applications.",
+				"Co-Developed a major design upgrade for a legal entity management system. The upgrade included a conversion to AngularJS and the implementation of Oath2 authentication."
+			]
+		}
+	],
+	"education":
+	[
+		{
+			"university": "DePaul University",
+			"degree": "Masters in Computer Science",
+			"startDate": "In Progress",
+			"endDate": null
+		},
+		{
+			"university": "DePaul University",
+			"degree": "Bachelors in Computer Science",
+			"startDate": "2008",
+			"endDate": "2011"
+		}
+	]
+}
