@@ -258,6 +258,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'custom_components/**/*',
             'resume/*.pdf',
+            'data/*.json',
             'images/{,*/}*.{webp}',
             'fonts/*'
           ]
