@@ -86,6 +86,10 @@ body {
   overflow-x: hidden;
 }
 
+.app-view {
+  height: 100%;
+}
+
 .invisible {
   opacity: 0;
 }
