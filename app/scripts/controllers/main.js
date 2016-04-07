@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * The main controller for the App. This controller will
+ * monitor window resizes and update the expanded resume
+ * items displayed accordingly.
+ */
 angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $http) {
 
     /****************** Scope Variables **********************/
@@ -19,13 +24,26 @@ angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $h
      */
     $scope.changeWindowSize = function (newSize) {
 
-      if (newSize <= 767) {
-        $scope.showWork1 = true;
-        $scope.showWork2 = true;
-        $scope.showWork3 = true;
-      }
+      $scope.expandAllResumeItems = newSize <= 767 ? true : false;
     };
 
+    /**
+     * Checks whether or not to collapse resume items based
+     * on the current window size and whether or not the expand
+     * button has be clicked.
+     *
+     * @param  {Boolean} showDetail   Whether or not to show detail.
+     * @return {Boolean}              True if showDetail is false and
+     *                                the window size is less than 767. False,
+     *                                otherwise.
+     */
+    $scope.collapseResumeItem = function (showDetail) {
+      if ($scope.expandAllResumeItems) {
+        return false;
+      }
+
+      return !showDetail;
+    };
 
     /****************** Initialization **********************/
 

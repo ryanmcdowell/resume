@@ -190,7 +190,7 @@
                             <!-- //.resume-year -->
 
                             <div class="resume-btn">
-                                <a class="clickable" ng-click="showDetail = !showDetail" ng-class="{'collapsed': !showDetail}"></a>
+                                <a class="clickable" ng-click="showDetail = !showDetail" ng-class="{'collapsed': collapseResumeItem(showDetail)}"></a>
                             </div>
                             <!-- //.resume-btn -->
 
@@ -203,7 +203,7 @@
                                 </div>
                                 <!-- //.panel-heading -->
 
-                                <div class="panel-collapse" collapse="!showDetail">
+                                <div class="panel-collapse" collapse="collapseResumeItem(showDetail)">
                                     <div class="panel-body text-grey">
                                         <p>
                                             Responsibilities:
