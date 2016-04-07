@@ -25,6 +25,40 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    // Auto version management
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        updateConfigs: [],
+        commit: false,
+        commitMessage: 'Release v%VERSION%',
+        commitFiles: ['package.json', 'bower.json'],
+        createTag: false,
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: false,
+        pushTo: 'upstream',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+        globalReplace: false,
+        prereleaseName: false,
+        metadata: '',
+        regExp: false
+      }
+    },
+
+    // Auto changelog management
+    conventionalChangelog: {
+      options: {
+        changelogOpts: {
+          // conventional-changelog options go here
+          preset: 'angular'
+        }
+      },
+      release: {
+        src: 'CHANGELOG.md'
+      }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       js: {

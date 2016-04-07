@@ -2,6 +2,8 @@ runtime: nodejs
 vm: true
 api_version: 1
 threadsafe: true
+inbound_services:
+- warmup
 handlers:
 - url: /.*
   script: IGNORED
