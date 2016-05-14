@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('resumeApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
+  'ngAnimate',
   'ngRoute',
   'sticky',
   'smoothScroll',

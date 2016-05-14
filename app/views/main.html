@@ -39,7 +39,7 @@
         </div>
         <!-- //.navbar-header -->
 
-        <div class="navbar-collapse collapse berg-collapse" collapse="!showDropdown">
+        <div class="navbar-collapse collapse berg-collapse" uib-collapse="!showDropdown">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="#home" scroll-to="home" duration="1800" ng-click="showDropdown = false">Home</a>
@@ -88,7 +88,7 @@
 
                                 <span class="divider"></span>
 
-                                <div in-view="animateProfile = true" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
+                                <div in-view="animateProfile = true" in-view-options="{offset: 50}" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
                                     <p class="text-grey">
                                         I currently work at Neuberger Berman, where I spend most of my time crafting and working on awesome projects.
                                     </p>
@@ -116,14 +116,14 @@
                                 <ul class="list-unstyled text-grey">
                                     <li>Ryan McDowell</li>
                                     <li>(630) 418-2121</li>
-                                    <li>hello@ryanmcdowell.io</li>
+                                    <li>me@ryanmcdowell.io</li>
                                     <li>www.ryanmcdowell.io</li>
                                 </ul>
                             </div>
                             <!-- //.col-md-5 -->
 
                             <div class="col-sm-6 col-md-7">
-                                <a href="resume/RyanMcDowell-Resume.pdf" class="btn btn-lg btn-custom" download>
+                                <a href="resume/RyanMcDowell-Resume.pdf" class="btn btn-lg btn-custom">
                                     <i class="icon-File-Download"></i> Download Resume
                                 </a>
                             </div>
@@ -179,13 +179,13 @@
                     <div class="panel-group resume" id="work">
 
                         <div class="resume-item"
-                             ng-repeat="job in resume.workExperience"
+                             ng-repeat="job in ::resume.workExperience"
                              ng-init="showDetail = $index > 0 ? false : true"
                              in-view="animate = $index > 0 ? true : false"
                              ng-class="{'animated': animate, 'bounceInUp': animate, 'invisible': !animate && $index > 0}">
 
                             <div class="resume-year">
-                                <span class="resume-year">{{job.startDate}} - {{job.endDate}}</span>
+                                <span class="resume-year">{{::job.startDate}} - {{::job.endDate}}</span>
                             </div>
                             <!-- //.resume-year -->
 
@@ -197,21 +197,21 @@
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">{{job.company}} - {{job.title}}</h4>
+                                        <h4 class="resume-title">{{::job.company}} - {{::job.title}}</h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
 
-                                <div class="panel-collapse" collapse="collapseResumeItem(showDetail)">
+                                <div class="panel-collapse" uib-collapse="collapseResumeItem(showDetail)">
                                     <div class="panel-body text-grey">
                                         <p>
                                             Responsibilities:
                                             <br>
-                                            {{job.responsibilities}}
+                                            {{::job.responsibilities}}
                                         </p>
-                                        <p ng-repeat="accomplishment in job.accomplishments" ng-class="{'last': $last}">
-                                            - {{accomplishment}}
+                                        <p ng-repeat="accomplishment in ::job.accomplishments" ng-class="::{'last': $last}">
+                                            - {{::accomplishment}}
                                         </p>
                                     </div>
                                     <!-- //.panel-body -->
@@ -237,13 +237,13 @@
                     <div class="panel-group resume" id="education">
 
                         <div class="resume-item"
-                             ng-repeat="degree in resume.education"
+                             ng-repeat="degree in ::resume.education"
                              ng-init="showDetail = false"
                              in-view="animate = $index > 0 ? true : false"
                              ng-class="{'animated': animate, 'bounceInUp': animate, 'invisible': !animate && $index > 0}">
 
                             <div class="resume-year">
-                                <span class="resume-year">{{degree.startDate}}<span ng-if="degree.endDate"> - {{degree.endDate}}</span></span>
+                                <span class="resume-year">{{::degree.startDate}}<span ng-if="::degree.endDate"> - {{::degree.endDate}}</span></span>
                             </div>
                             <!-- //.resume-year -->
 
@@ -255,13 +255,13 @@
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">{{degree.degree}} - {{degree.university}}</h4>
+                                        <h4 class="resume-title">{{::degree.degree}} - {{::degree.university}}</h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
 
-                                <div id="education1" class="panel-collapse" collapse="!showDetail">
+                                <div id="education1" class="panel-collapse" uib-collapse="!showDetail">
                                     <div class="panel-body text-grey">
                                         <p></p>
                                     </div>
@@ -429,7 +429,7 @@
                 <div class="col-md-12">
 
                     <!-- CONTACT DETAILS START -->
-                    <div class="contact-details text-center" in-view="animateContact = true" ng-class="{'animated': animateContact, 'flipInX': animateContact}">
+                    <div class="contact-details text-center" in-view="animateContact = true" in-view-options="{offset: 50}" ng-class="{'animated': animateContact, 'flipInX': animateContact, 'invisible': !animateContact}">
                         <div class="speech-bubble">
                             <i class="icon-Speach-Bubble11"></i>
 
@@ -441,7 +441,7 @@
 
                         <h2>Ryan <strong>McDowell</strong></h2>
 
-                        <h4 class="text-grey"><a href="mailto:hello@ryanmcdowell.io">hello@ryanmcdowell.io</a></h4>
+                        <h4 class="text-grey"><a href="mailto:me@ryanmcdowell.io">me@ryanmcdowell.io</a></h4>
 
                         <span class="divider center"></span>
                     </div>
@@ -477,7 +477,7 @@
             <div class="col-md-12">
                 <div class="copyright text-center">
                     <p class="text-grey">This site was built using AngularJS, Bootstrap, Yeoman, Grunt, Bower, HTML5 and CSS3.</p>
-                    <p class="text-grey">&copy; {{currentYear}} Ryan McDowell. All rights reserved.</p>
+                    <p class="text-grey">&copy; {{::currentYear}} Ryan McDowell. All rights reserved.</p>
                 </div>
                 <!-- //.copyright -->
             </div>
