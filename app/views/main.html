@@ -83,14 +83,14 @@
                                 <h2 class="section-title">Hello, My Name is Ryan.</h2>
 
                                 <p>
-                                    Ryan McDowell, born and grew up in Chicago, Illinois. Highly motivated software engineer with a passion for cutting-edge technology.
+                                    Ryan McDowell, born and grew up in Chicago, Illinois living the dream in San Francisco, CA. Highly motivated software engineer with a passion for cutting-edge technology.
                                 </p>
 
                                 <span class="divider"></span>
 
                                 <div in-view="animateProfile = true" in-view-options="{offset: 50}" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
                                     <p class="text-grey">
-                                        I currently work at Neuberger Berman, where I spend most of my time crafting and working on awesome projects.
+                                        I currently work at Google, where I spend most of my time solving complex technical problems on the Google Cloud Platform.
                                     </p>
 
                                     <p class="text-grey">
@@ -180,7 +180,7 @@
 
                         <div class="resume-item"
                              ng-repeat="job in ::resume.workExperience"
-                             ng-init="showDetail = $index > 0 ? false : true"
+                             ng-init="showDetail = ($index > 0 || !job.accomplishments.length) ? false : true"
                              in-view="animate = $index > 0 ? true : false"
                              ng-class="{'animated': animate, 'bounceInUp': animate, 'invisible': !animate && $index > 0}">
 
@@ -205,7 +205,7 @@
 
                                 <div class="panel-collapse" uib-collapse="collapseResumeItem(showDetail)">
                                     <div class="panel-body text-grey">
-                                        <p>
+                                        <p ng-if="job.responsibilities">
                                             Responsibilities:
                                             <br>
                                             {{::job.responsibilities}}

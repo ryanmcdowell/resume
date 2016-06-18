@@ -4,10 +4,19 @@
 	"workExperience":
 	[
 		{
+			"company": "Google",
+			"title": "Web Application Cloud Deployment Engineer",
+			"startDate": "2016",
+			"endDate": "Now",
+			"responsibilities": "Write code, architect and design systems, build out proof of concepts, and compare and contrast technology alternatives for Google Cloud clients.",
+			"accomplishments": [
+			]
+		},
+		{
 			"company": "Neuberger Berman",
 			"title": "Solutions Architect, AVP",
 			"startDate": "2015",
-			"endDate": "Now",
+			"endDate": "2016",
 			"responsibilities": "Solutions architect for the Client Service team responsible for working with business users to define reporting requirements and oversee the design and implementation.",
 			"accomplishments": [
 				"Selected by the CTO to be a member of the Developer Council that aimed to encourage collaboration and idea generation across technology groups. Set the firm-wide standards for database security and worked to train other technology groups on internally built shared services.",
