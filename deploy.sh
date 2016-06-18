@@ -22,8 +22,21 @@ fi
 #
 ##################################
 
+# The project id to deploy to on Google Cloud.
 PROJECT_ID=resume-1270
-VERSION=`cat package.json | python -c 'import json,sys;obj=json.load(sys.stdin);print obj["version"];' | tr -d '.'`
+
+# Parse the version out of the package.json so we can automatically deploy a
+# release with the version number in the release name. The below command
+# requires the command-line JSON processor "jq" to be installed.
+#
+# https://github.com/stedolan/jq
+#
+# If jq is not installed, you can use the below as an alternative which uses
+# python and bash to parse the version number.
+#
+# VERSION=`cat package.json | python -c 'import json,sys;obj=json.load(sys.stdin);print obj["version"];' | tr -d '.'`
+#
+VERSION=`cat package.json | jq -r '.version'`
 
 printf "\n\n"
 printf "Deploying version release-$VERSION of gcloud project $PROJECT_ID\n\n"
