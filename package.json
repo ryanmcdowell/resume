@@ -4,6 +4,7 @@
   "description": "Resume website for Ryan McDowell.",
   "repository": "https://github.com/ryanmcdowell/resume.git",
   "dependencies": {
+    "@google/cloud-debug": "^0.8.3",
     "compression": "^1.6.1",
     "express": "^4.13.4",
     "gcloud": "^0.29.0"
