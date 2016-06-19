@@ -187,7 +187,7 @@
 
                         <div class="resume-item"
                              ng-repeat="job in ::resume.workExperience"
-                             ng-init="showDetail = ($index > 0 || !job.accomplishments.length) ? false : true"
+                             ng-init="showDetail = ($index > 0 || (!job.responsibilities && !job.accomplishments.length)) ? false : true"
                              in-view="animate = $index > 0 ? true : false"
                              ng-class="{'animated': animate, 'bounceInUp': animate, 'invisible': !animate && $index > 0}">
 
