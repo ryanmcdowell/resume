@@ -36,7 +36,7 @@ PROJECT_ID=resume-1270
 #
 # VERSION=`cat package.json | python -c 'import json,sys;obj=json.load(sys.stdin);print obj["version"];' | tr -d '.'`
 #
-VERSION=`cat package.json | jq -r '.version'`
+VERSION=`cat package.json | jq -r '.version' | tr -d '.'`
 
 printf "\n\n"
 printf "Deploying version release-$VERSION of gcloud project $PROJECT_ID\n\n"
