@@ -1,3 +1,20 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/ryanmcdowell/resume/compare/v1.0.2...v1.0.3) (2016-06-19)
+
+
+### Bug Fixes
+
+* Initialize showDropdown variable to false in navigation section to fix potential undefined errors. ([2ea4839](https://github.com/ryanmcdowell/resume/commit/2ea4839))
+* Make the state abbreviations consistent in the profile section. ([3622ae4](https://github.com/ryanmcdowell/resume/commit/3622ae4))
+* Update deploy.sh so the version bump happens prior to the deploy and is rolled back in the event of an error. ([a65b370](https://github.com/ryanmcdowell/resume/commit/a65b370))
+
+
+### Features
+
+* Add google cloud debug so the app can be debugged in the project console on GCP. ([5604d6a](https://github.com/ryanmcdowell/resume/commit/5604d6a))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/ryanmcdowell/resume/compare/v1.0.1...v1.0.2) (2016-06-19)
 
