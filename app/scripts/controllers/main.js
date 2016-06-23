@@ -5,7 +5,16 @@
  * monitor window resizes and update the expanded resume
  * items displayed accordingly.
  */
-angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $http) {
+angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $http, $base64) {
+
+    /****************** Local Variables **********************/
+
+    // The base64 encoded phone and email values to prevent
+    // spam bots. These values will be decoded at runtime by
+    // angular.
+    var phone = 'KDYzMCkgNDE4LTIxMjE=';
+    var email = 'bWVAcnlhbm1jZG93ZWxsLmlv';
+
 
     /****************** Scope Variables **********************/
 
@@ -14,6 +23,26 @@ angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $h
 
 
     /****************** Scope Functions **********************/
+
+    /**
+     * Gets the decoded phone value for display
+     * to the user.
+     *
+     * @return {String} The phone number.
+     */
+    $scope.getPhone = function () {
+      return $base64.decode(phone);
+    };
+
+    /**
+     * Gets the decoded email value for display
+     * to the user.
+     *
+     * @return {String} The email address.
+     */
+    $scope.getEmail = function () {
+      return $base64.decode(email);
+    };
 
     /**
      * Expands the resume boxes when the window size

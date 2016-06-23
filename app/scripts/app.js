@@ -6,7 +6,8 @@ angular.module('resumeApp', [
   'sticky',
   'smoothScroll',
   'angular-inview',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'base64'
 ])
   .config(function ($routeProvider) {
     $routeProvider
