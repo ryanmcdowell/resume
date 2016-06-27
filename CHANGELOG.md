@@ -1,3 +1,13 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/ryanmcdowell/resume/compare/v1.0.3...v1.0.4) (2016-06-27)
+
+
+### Features
+
+* Encode email and phone number to prevent spam from bots. ([46b86dd](https://github.com/ryanmcdowell/resume/commit/46b86dd))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/ryanmcdowell/resume/compare/v1.0.2...v1.0.3) (2016-06-19)
 
