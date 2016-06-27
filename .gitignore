@@ -1,7 +1,15 @@
+# Dependencies
 node_modules
+app/bower_components
+
+# Build
 dist
 .tmp
 .sass-cache
-app/bower_components
 *.log
+
+# Test
 test/coverage
+
+# Config
+app/scripts/services/config.js

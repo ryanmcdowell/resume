@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('resumeApp', [
+angular.module('resume', [
+  'resume.config',
   'ngAnimate',
   'ngRoute',
   'sticky',
@@ -9,7 +10,13 @@ angular.module('resumeApp', [
   'ui.bootstrap',
   'base64'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $compileProvider, Config) {
+    // Disable debug information when in production to
+    // speed up the app's performance.
+    if (Config.environment === 'Production') {
+      $compileProvider.debugInfoEnabled(false);
+    }
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

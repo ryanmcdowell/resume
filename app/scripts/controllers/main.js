@@ -5,7 +5,7 @@
  * monitor window resizes and update the expanded resume
  * items displayed accordingly.
  */
-angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $http, $base64) {
+angular.module('resume').controller('MainCtrl', function ($scope, $window, $http, $base64) {
 
     /****************** Local Variables **********************/
 

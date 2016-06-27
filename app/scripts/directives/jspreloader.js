@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('resumeApp').directive('jsPreloader', function () {
+angular.module('resume').directive('jsPreloader', function () {
   return {
     restrict: 'A',
     link: function postLink() {

@@ -3,7 +3,7 @@
 describe('Directive: jsPreloader', function () {
 
   // load the directive's module
-  // beforeEach(module('resumeApp'));
+  // beforeEach(module('resume'));
 
   // var element,
   //   scope;
