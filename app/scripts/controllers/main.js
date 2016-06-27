@@ -9,8 +9,8 @@ angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $h
 
     /****************** Local Variables **********************/
 
-    // The base64 encoded phone and email values to prevent
-    // spam bots. These values will be decoded at runtime by
+    // The base64 encoded phone and email to the hide values
+    // from spam bots. These values will be decoded at runtime by
     // angular.
     var phone = 'KDYzMCkgNDE4LTIxMjE=';
     var email = 'bWVAcnlhbm1jZG93ZWxsLmlv';
@@ -30,7 +30,7 @@ angular.module('resumeApp').controller('MainCtrl', function ($scope, $window, $h
      *
      * @return {String} The phone number.
      */
-    $scope.getPhone = function () {
+    $scope.getPhoneNumber = function () {
       return $base64.decode(phone);
     };
 
