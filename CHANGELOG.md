@@ -1,3 +1,13 @@
+<a name="1.0.6"></a>
+## [1.0.6](https://github.com/ryanmcdowell/resume/compare/v1.0.5...v1.0.6) (2016-10-02)
+
+
+### Features
+
+* Downgrade App Engine instance to f1-micro. ([6d2c9e5](https://github.com/ryanmcdowell/resume/commit/6d2c9e5))
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/ryanmcdowell/resume/compare/v1.0.4...v1.0.5) (2016-08-15)
 
