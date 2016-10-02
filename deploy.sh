@@ -48,7 +48,7 @@ printf "\n\n"
 printf "Deploying version release-$VERSION of gcloud project $PROJECT_ID\n\n"
 
 # Invoke the deployment.
-gcloud preview app deploy --project $PROJECT_ID --version release-$VERSION
+gcloud app deploy --project $PROJECT_ID --version release-$VERSION
 
 # Stop execution on failure.
 if [[ "$?" != 0 ]]
