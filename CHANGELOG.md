@@ -1,3 +1,16 @@
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/ryanmcdowell/resume/compare/v1.0.6...v1.0.7) (2016-11-06)
+
+
+### Bug Fixes
+
+* Remove 'preview' from deployment command. ([6b55b4c](https://github.com/ryanmcdowell/resume/commit/6b55b4c))
+* Update deprecated gcloud library to google-cloud. ([f520ce8](https://github.com/ryanmcdowell/resume/commit/f520ce8))
+* Update google cloud service name to 'resume' ([37842ff](https://github.com/ryanmcdowell/resume/commit/37842ff))
+* Update projectid to ryanmcdowell-io. ([134969f](https://github.com/ryanmcdowell/resume/commit/134969f))
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/ryanmcdowell/resume/compare/v1.0.5...v1.0.6) (2016-10-02)
 
