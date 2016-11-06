@@ -23,7 +23,7 @@ fi
 ##################################
 
 # The project id to deploy to on Google Cloud.
-PROJECT_ID=resume-1270
+PROJECT_ID=ryanmcdowell-io
 
 # Parse the version out of the package.json so we can automatically deploy a
 # release with the version number in the release name and store the old version
