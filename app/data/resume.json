@@ -5,9 +5,18 @@
 	[
 		{
 			"company": "Google",
-			"title": "Web Application Cloud Deployment Engineer",
-			"startDate": "2016",
+			"title": "Practice Lead, Big Data Deployment Engineer, Google Cloud",
+			"startDate": "2017",
 			"endDate": "Now",
+			"responsibilities": "Write code, architect and design systems, build out proof of concepts, and compare and contrast technology alternatives for Google Cloud clients.",
+			"accomplishments": [
+			]
+		},
+		{
+			"company": "Google",
+			"title": "Big Data Deployment Engineer, Google Cloud",
+			"startDate": "2016",
+			"endDate": "2017"",
 			"responsibilities": "Write code, architect and design systems, build out proof of concepts, and compare and contrast technology alternatives for Google Cloud clients.",
 			"accomplishments": [
 			]
