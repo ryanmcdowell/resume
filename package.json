@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Resume website for Ryan McDowell.",
   "repository": "https://github.com/ryanmcdowell/resume.git",
   "dependencies": {
