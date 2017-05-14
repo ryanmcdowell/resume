@@ -74,6 +74,14 @@ angular.module('resume').controller('MainCtrl', function ($scope, $window, $http
       return !showDetail;
     };
 
+    /**
+     * Tracks every resume download by logging an event
+     * to Google Analytics.
+     */
+    $scope.downloadClick = function () {
+        ga('send', 'event', 'buttons', 'click', 'resume-download');
+    };
+
     /****************** Initialization **********************/
 
     // Bind an event listener so the change function is invoked
