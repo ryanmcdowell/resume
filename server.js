@@ -1,7 +1,7 @@
 'use strict';
 
 // Load cloud debugging for Stackdriver.
-require('@google/cloud-debug');
+require('@google-cloud/debug-agent').start();
 
 var compression = require('compression');
 var express = require('express');
