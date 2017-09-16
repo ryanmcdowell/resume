@@ -16,7 +16,9 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    'bump-only': 'grunt-bump',
+    'bump-commit': 'grunt-bump'
   });
 
   // Configurable paths for the application
