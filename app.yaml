@@ -6,8 +6,8 @@ threadsafe: true
 inbound_services:
 - warmup
 resources:
-  cpu: 0.9
-  memory_gb: 0.15 # Set to below 600MB because GCP will buffer 400 MB.
+  cpu: 0.5
+  memory_gb: 0.5 # Set to below 600MB because GCP will buffer 400 MB.
   disk_size_gb: 10
 automatic_scaling:
   min_num_instances: 1
