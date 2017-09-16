@@ -1,3 +1,24 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/ryanmcdowell/resume/compare/v1.0.9...v2.0.1) (2017-09-16)
+
+
+### Bug Fixes
+
+* Change app.yaml for new style of defining flex environment. ([fb5d6f3](https://github.com/ryanmcdowell/resume/commit/fb5d6f3))
+* Fix grunt bump config and app.yaml vCpus. ([e1d5f5b](https://github.com/ryanmcdowell/resume/commit/e1d5f5b))
+* Fix memory per core configuration in app.yaml. ([38d4268](https://github.com/ryanmcdowell/resume/commit/38d4268))
+
+
+### Features
+
+* Add new resume details and update job titles. ([04ae19c](https://github.com/ryanmcdowell/resume/commit/04ae19c))
+* Add resume downloads to GA event tracking ([0742688](https://github.com/ryanmcdowell/resume/commit/0742688))
+* Update grunt build & google cloud dependencies ([964d32d](https://github.com/ryanmcdowell/resume/commit/964d32d))
+* Update hero and portrait images. ([7a9aff6](https://github.com/ryanmcdowell/resume/commit/7a9aff6))
+* Update skills section to include Google Cloud products. ([13ba979](https://github.com/ryanmcdowell/resume/commit/13ba979))
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/ryanmcdowell/resume/compare/v1.0.8...v1.0.9) (2017-05-07)
 
