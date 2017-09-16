@@ -5,20 +5,24 @@
 	[
 		{
 			"company": "Google",
-			"title": "Practice Lead, Big Data Deployment Engineer, Google Cloud",
+			"title": "Head of Big Data Professional Services, Google Cloud",
 			"startDate": "2017",
 			"endDate": "Now",
-			"responsibilities": "Write code, architect and design systems, build out proof of concepts, and compare and contrast technology alternatives for Google Cloud clients.",
+			"responsibilities": "Drive increased platform revenue by ensuring the successful design & implementation for Google Cloud's most strategic Big Data customers (1M+).",
 			"accomplishments": [
 			]
 		},
 		{
 			"company": "Google",
-			"title": "Big Data Deployment Engineer, Google Cloud",
+			"title": "Big Data Cloud Engineer, Google Cloud",
 			"startDate": "2016",
 			"endDate": "2017",
 			"responsibilities": "Write code, architect and design systems, build out proof of concepts, and compare and contrast technology alternatives for Google Cloud clients.",
 			"accomplishments": [
+				"Led development & delivery of Professional Services first package offering in Big Data.",
+				"Trained 100+ partners worldwide on Google Cloud Platform with an overall CSAT score of 87%.",
+				"Co-developed a 50 page whitepaper on migrating Teradata data warehouses to BigQuery. The whitepaper has been used as the baseline methodology for additional enterprise data warehouse migrations.",
+				"Wrote a blog post on visualizing Google Cloud billing using BigQuery & DataStudio. The report template created was used by many strategic customers to get insight into their spend on Google Cloud. The post was viewed in 56 different countries and is now referenced in the platform's public documentation."
 			]
 		},
 		{
@@ -63,12 +67,6 @@
 	],
 	"education":
 	[
-		{
-			"university": "DePaul University",
-			"degree": "Masters in Computer Science",
-			"startDate": "In Progress",
-			"endDate": null
-		},
 		{
 			"university": "DePaul University",
 			"degree": "Bachelors in Computer Science",
