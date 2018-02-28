@@ -5,18 +5,9 @@
 	[
 		{
 			"company": "Google",
-			"title": "Lead Cloud Data Engineer, Professional Services",
-			"startDate": "2017",
-			"endDate": "Now",
-			"responsibilities": "Drive increased platform revenue by ensuring the successful design & implementation for Google Cloud's most strategic Big Data customers (1M+).",
-			"accomplishments": [
-			]
-		},
-		{
-			"company": "Google",
 			"title": "Cloud Data Engineer, Professional Services",
 			"startDate": "2016",
-			"endDate": "2017",
+			"endDate": "Now",
 			"responsibilities": "Write code, architect and design systems, build out proof of concepts, and compare and contrast technology alternatives for Google Cloud clients.",
 			"accomplishments": [
 				"Led development & delivery of Professional Services first package offering in Big Data.",
