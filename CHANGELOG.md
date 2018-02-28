@@ -1,3 +1,14 @@
+<a name="2.0.3"></a>
+## [2.0.3](https://github.com/ryanmcdowell/resume/compare/v2.0.2...v2.0.3) (2018-02-28)
+
+
+### Bug Fixes
+
+* Fix resume titles. ([5314715](https://github.com/ryanmcdowell/resume/commit/5314715))
+* Update role, add missing package.json dependency for grunt-conventional-changelog ([616a7c7](https://github.com/ryanmcdowell/resume/commit/616a7c7))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/ryanmcdowell/resume/compare/v1.0.9...v2.0.1) (2017-09-16)
 
