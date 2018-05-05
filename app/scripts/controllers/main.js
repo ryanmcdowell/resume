@@ -12,7 +12,6 @@ angular.module('resume').controller('MainCtrl', function ($scope, $window, $http
     // The base64 encoded phone and email to the hide values
     // from spam bots. These values will be decoded at runtime by
     // angular.
-    var phone = 'KDYzMCkgNDE4LTIxMjE=';
     var email = 'bWVAcnlhbm1jZG93ZWxsLmlv';
 
 
@@ -23,16 +22,6 @@ angular.module('resume').controller('MainCtrl', function ($scope, $window, $http
 
 
     /****************** Scope Functions **********************/
-
-    /**
-     * Gets the decoded phone value for display
-     * to the user.
-     *
-     * @return {String} The phone number.
-     */
-    $scope.getPhoneNumber = function () {
-      return $base64.decode(phone);
-    };
 
     /**
      * Gets the decoded email value for display
