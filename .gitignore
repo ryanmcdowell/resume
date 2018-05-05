@@ -13,3 +13,6 @@ test/coverage
 
 # Config
 app/scripts/services/config.js
+
+# OSX
+.DS_Store
