@@ -1,3 +1,19 @@
+<a name="2.0.4"></a>
+## [2.0.4](https://github.com/ryanmcdowell/resume/compare/v2.0.3...v2.0.4) (2018-05-12)
+
+
+### Bug Fixes
+
+* Add .DS_Store to ignored files. ([7b835bf](https://github.com/ryanmcdowell/resume/commit/7b835bf))
+* Remove phone number from site. ([07deb0e](https://github.com/ryanmcdowell/resume/commit/07deb0e))
+
+
+### Features
+
+* Add social icons to footer. ([75739ae](https://github.com/ryanmcdowell/resume/commit/75739ae))
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/ryanmcdowell/resume/compare/v2.0.2...v2.0.3) (2018-02-28)
 
