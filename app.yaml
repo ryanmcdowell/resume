@@ -1,21 +1,11 @@
 service: default
-env: flex
-api_version: 1
-runtime: nodejs
-threadsafe: true
+runtime: nodejs10
 inbound_services:
 - warmup
-resources:
-  cpu: 0.5
-  memory_gb: 0.5 # Set to below 600MB because GCP will buffer 400 MB.
-  disk_size_gb: 10
 automatic_scaling:
-  min_num_instances: 1
-  max_num_instances: 2
-  cool_down_period_sec: 120 # default value
-  cpu_utilization:
-    target_utilization: 0.5
+  min_instances: 0
+  max_instances: 2
 handlers:
 - url: /.*
-  script: IGNORED
-  secure: never
+  script: auto
+  secure: always
