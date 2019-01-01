@@ -1,14 +1,13 @@
 {
   "name": "resume",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "private": true,
   "description": "Resume website for Ryan McDowell.",
   "repository": "https://github.com/ryanmcdowell/resume.git",
   "dependencies": {
-    "@google-cloud/debug-agent": "^1.0.0",
-    "compression": "^1.6.1",
-    "express": "^4.14.0",
-    "google-cloud": "^0.54.0",
+    "@google-cloud/debug-agent": "^3.0.1",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
     "grunt-replace": "^1.0.1",
     "jpegtran-bin": "^3.2.0"
   },
@@ -43,8 +42,8 @@
     "jshint-stylish": "^1.0.0",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
-    "karma-coverage": "^1.0.0",
-    "karma-jasmine": "^1.0.2",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^1.1.2",
     "karma-ng-html2js-preprocessor": "^0.2.1",
     "karma-ng-scenario": "^0.1.0",
     "karma-phantomjs-launcher": "^1.0.1",
@@ -52,7 +51,7 @@
     "time-grunt": "~0.2.1"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=10.0"
   },
   "scripts": {
     "test": "grunt test"

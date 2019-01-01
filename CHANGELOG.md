@@ -1,3 +1,13 @@
+<a name="2.0.5"></a>
+## [2.0.5](https://github.com/ryanmcdowell/resume/compare/v2.0.4...v2.0.5) (2019-01-01)
+
+
+### Features
+
+* Convert app.yaml to AppEngine Standard ([097e856](https://github.com/ryanmcdowell/resume/commit/097e856))
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/ryanmcdowell/resume/compare/v2.0.3...v2.0.4) (2018-05-12)
 
