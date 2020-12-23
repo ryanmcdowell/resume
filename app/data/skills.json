@@ -1,0 +1,28 @@
+{
+  "skills": [
+    {
+      "name": "BigQuery",
+      "pct": 90
+    },
+    {
+      "name": "Google Cloud Platform",
+      "pct": 60
+    },
+    {
+      "name": "Data Warehousing",
+      "pct": 85
+    },
+    {
+      "name": "Java",
+      "pct": 65
+    },
+    {
+      "name": "Apache Beam",
+      "pct": 75
+    },
+    {
+      "name": "Dataflow",
+      "pct": 75
+    }
+  ]
+}

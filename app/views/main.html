@@ -90,13 +90,13 @@
 
                                 <div in-view="animateProfile = true" in-view-options="{offset: 50}" ng-class="{'animated': animateProfile, 'bounceInUp': animateProfile, 'invisible': !animateProfile}">
                                     <p class="text-grey">
-                                        I currently work at Google, where I spend most of my time solving complex technical problems on the Google Cloud Platform.
+                                        I currently work at Google, where I spend most of my time solving complex technical problems on the Google Cloud Platform while working with some of Google Cloud's largest customers. I specialize in Data Warehouse
+                                        & Streaming Analytic solutions and have partnered with Google Cloud customers to build large-scale data
+                                        platforms.
                                     </p>
-
                                     <p class="text-grey">
-                                        In my free time, I work on my custom built Linux media center attempting to create binge watching utopia. But
-                                        don't let that fool you; I definitely have a thirst for adventure. In training for my next life as a spy,
-                                        I've rappelled off the Wit Hotel and have flown a military combat plane in a dogfight (no flying experience necessary).
+                                        In my free time, I play guitar and have a thirst for adventure. In training for my next life as a spy,
+                                        I've rappelled off a 27-story Hotel and have flown a military combat plane in an aerial combat practice.
                                     </p>
                                 </div>
 
@@ -311,95 +311,21 @@
             <!-- CIRCLE CHART START -->
             <div class="circle-chart">
                 <div class="row">
-                    <div class="col-sm-4 col-md-2">
+                   <div class="col-sm-4 col-md-2" ng-repeat="skill in ::skills.skills">
                         <div class="item">
                             <div class="circle">
-                                <span class="item-progress" in-view="circleHtmlProgress = 45" ng-style="{height: circleHtmlProgress + 'px'}"></span>
+                                <span class="item-progress" in-view="circleHtmlProgress = skill.pct" ng-style="{height: circleHtmlProgress + 'px'}"></span>
                             </div>
                             <!-- //.circle -->
 
-                            <span class="percent">45%</span>
+                            <span class="percent">{{::skill.pct}}%</span>
 
-                            <h4>BigQuery</h4>
+                            <h4>{{::skill.name}}</h4>
                         </div>
                         <!-- //.item -->
                     </div>
                     <!-- //.col-md-2 -->
 
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" in-view="circleAngularProgress = 55" ng-style="{height: circleAngularProgress + 'px'}"></span>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="percent">55%</span>
-
-                            <h4>Google Cloud Platform</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" in-view="circleMongoProgress = 40" ng-style="{height: circleMongoProgress + 'px'}"></span>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="percent">40%</span>
-
-                            <h4>Data Warehousing</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" in-view="circleJavaProgress = 65" ng-style="{height: circleJavaProgress + 'px'}"></span>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="percent">65%</span>
-
-                            <h4>Java</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" in-view="circleMuleProgress = 60" ng-style="{height: circleMuleProgress + 'px'}"></span>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="percent">60%</span>
-
-                            <h4>Apache Beam</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item last">
-                            <div class="circle">
-                                <span class="item-progress" in-view="circleMicroProgress = 60" ng-style="{height: circleMicroProgress + 'px'}"></span>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="percent">60%</span>
-
-                            <h4>Dataflow</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
                 </div>
                 <!-- //.row -->
             </div>
@@ -514,7 +440,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="copyright text-center">
-                    <p class="text-grey">This site was built using AngularJS, Bootstrap, Yeoman, Grunt, Bower, HTML5 and CSS3.</p>
+                    <p class="text-grey">This site was built using Cloud Run, AngularJS, Bootstrap, HTML5 and CSS3.</p>
                     <p class="text-grey">&copy; {{::currentYear}} Ryan McDowell. All rights reserved.</p>
                 </div>
                 <!-- //.copyright -->

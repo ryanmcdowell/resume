@@ -89,4 +89,10 @@ angular.module('resume').controller('MainCtrl', function ($scope, $window, $http
       $scope.resume = data;
     });
 
+    // Retrieve skills data and populate the associated scope
+    // variable.
+    $http.get('/data/skills.json').success(function (data) {
+      $scope.skills = data;
+    });
+
   });
