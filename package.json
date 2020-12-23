@@ -55,9 +55,9 @@
     "node": ">=10.0"
   },
   "scripts": {
-    "build": "grunt build",
+    "build": "grunt build --debug --verbose",
     "test": "grunt test",
-    "postinstall": "bower install --allow-root"
+    "prepare": "node_modules/.bin/bower install --allow-root"
   },
   "license": "MIT"
 }

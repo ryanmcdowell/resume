@@ -446,6 +446,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      images: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/images',
+        src: '{,*/}*.{png,jpg,jpeg,gif}',
+        dest: '<%= yeoman.dist %>/images'
       }
     },
 
@@ -459,7 +465,10 @@ module.exports = function (grunt) {
       ],
       dist: [
         'copy:styles',
-        'imagemin',
+        'copy:images',
+        // Commenting out because Cloud Build fails when minifying. Uncomment
+        // and remove the copy:images task when the issue if figured out.
+        // 'imagemin',
         'svgmin'
       ]
     },
