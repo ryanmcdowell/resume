@@ -1,3 +1,17 @@
+<a name="2.0.6"></a>
+## [2.0.6](https://github.com/ryanmcdowell/resume/compare/v2.0.5...v2.0.6) (2020-12-23)
+
+
+### Features
+
+* Add Cloud Build and continuous deployment to Cloud Run ([10f653d](https://github.com/ryanmcdowell/resume/commit/10f653d))
+* Add grunt-cli and scripts for build, test, and postinstall ([64974e9](https://github.com/ryanmcdowell/resume/commit/64974e9))
+* Update bio, skills, and resume with latest info ([f312064](https://github.com/ryanmcdowell/resume/commit/f312064))
+* Update main profile image ([f6228e1](https://github.com/ryanmcdowell/resume/commit/f6228e1))
+* Update title to Data Engineer ([b940430](https://github.com/ryanmcdowell/resume/commit/b940430))
+
+
+
 <a name="2.0.5"></a>
 ## [2.0.5](https://github.com/ryanmcdowell/resume/compare/v2.0.4...v2.0.5) (2019-01-01)
 
