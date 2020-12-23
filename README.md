@@ -4,7 +4,7 @@ My resume website which I created as a side project to learn more about
 AngularJS and frontend web-development. This project uses Cloud Build and
 Cloud Run to automate deployment of the site.
 
-![site](https://user-images.githubusercontent.com/1460312/103028751-fc0cd680-451d-11eb-8591-575172a4ba61.png)
+![site](https://user-images.githubusercontent.com/1460312/103029249-01b6ec00-451f-11eb-9175-14774d38f5ad.png)
 
 ## Installation
 
