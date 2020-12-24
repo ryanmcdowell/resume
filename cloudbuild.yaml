@@ -55,7 +55,7 @@ steps:
     'deploy',
     'resume',
     '--image', '${_IMAGE}:latest',
-    '--revision-suffix', '${TAG_NAME}',
+    '--revision-suffix', '${TAG_NAME//./}',
     '--region', 'us-central1',
     '--platform', 'managed',
     '--max-instances', '2',

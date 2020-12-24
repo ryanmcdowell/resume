@@ -1,3 +1,14 @@
+<a name="2.0.7"></a>
+## [2.0.7](https://github.com/ryanmcdowell/resume/compare/v2.0.6...v2.0.7) (2020-12-24)
+
+
+### Features
+
+* Add revision suffix to Cloud Run deployments ([0c839f2](https://github.com/ryanmcdowell/resume/commit/0c839f2))
+* Remove hashtag from URL & use HTML5 History API ([2bcb26c](https://github.com/ryanmcdowell/resume/commit/2bcb26c))
+
+
+
 <a name="2.0.6"></a>
 ## [2.0.6](https://github.com/ryanmcdowell/resume/compare/v2.0.5...v2.0.6) (2020-12-23)
 
