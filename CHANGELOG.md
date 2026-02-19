@@ -1,3 +1,13 @@
+<a name="2.0.8"></a>
+## [2.0.8](https://github.com/ryanmcdowell/resume/compare/v2.0.7...v2.0.8) (2026-02-19)
+
+
+### Features
+
+* Update main view to reflect job change to Databricks ([e656c33](https://github.com/ryanmcdowell/resume/commit/e656c33))
+
+
+
 <a name="2.0.7"></a>
 ## [2.0.7](https://github.com/ryanmcdowell/resume/compare/v2.0.6...v2.0.7) (2020-12-24)
 
