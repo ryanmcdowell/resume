@@ -1,3 +1,13 @@
+<a name="2.0.9"></a>
+## [2.0.9](https://github.com/ryanmcdowell/resume/compare/v2.0.8...v2.0.9) (2026-02-19)
+
+
+### Features
+
+* Update Grunt file to attempt to fix build ([ffc1f1a](https://github.com/ryanmcdowell/resume/commit/ffc1f1a))
+
+
+
 <a name="2.0.8"></a>
 ## [2.0.8](https://github.com/ryanmcdowell/resume/compare/v2.0.7...v2.0.8) (2026-02-19)
 
